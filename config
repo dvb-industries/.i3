@@ -26,13 +26,7 @@ bindsym $mod+Shift+Q kill
 # start dmenu (a program launcher)
 bindsym $mod+d exec dmenu_run
 
-# change focus
-bindsym $mod+j focus left
-bindsym $mod+k focus down
-bindsym $mod+l focus up
-bindsym $mod+semicolon focus right
-
-# alternatively, you can use emacs key bindings:
+# change focus using emacs key bindings:
 bindsym $mod+b focus left
 bindsym $mod+n focus down
 bindsym $mod+p focus up
@@ -44,13 +38,7 @@ bindsym $mod+Down focus down
 bindsym $mod+Up focus up
 bindsym $mod+Right focus right
 
-# move focused window
-bindsym $mod+Shift+J move left
-bindsym $mod+Shift+K move down
-bindsym $mod+Shift+L move up
-bindsym $mod+Shift+colon move right
-
-# alternatively, you can use emacs key-binding:
+# move focused window using emacs key-binding:
 bindsym $mod+Shift+B move left
 bindsym $mod+Shift+N move down
 bindsym $mod+Shift+P move up
