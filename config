@@ -156,4 +156,8 @@ bar {
         status_command i3status -c ~/.i3/i3status.conf
 }
 
+# Create an emacs client and connect it to an emacs server
+bindsym $mod+t exec --no-startup-id emacsclient -c -a ""
+
+exec --no-startup-id emacs -daemon
 exec --no-startup-id nm-applet
