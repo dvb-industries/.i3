@@ -159,5 +159,10 @@ bar {
 # Create an emacs client and connect it to an emacs server
 bindsym $mod+t exec --no-startup-id emacsclient -c -a ""
 
+# Take screenshots from the entire window...
+bindsym $mod+u exec --no-startup-id screenshot root
+# ... or from the current window
+bindsym $mod+i exec --no-startup-id screenshot window
+
 exec --no-startup-id emacs -daemon
 exec --no-startup-id nm-applet
