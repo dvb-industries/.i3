@@ -166,3 +166,4 @@ bindsym $mod+i exec --no-startup-id screenshot window
 
 exec --no-startup-id emacs -daemon
 exec --no-startup-id nm-applet
+exec xautolock -time 5 -locker 'i3lock --color=000000 --nofork'
