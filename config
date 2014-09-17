@@ -164,6 +164,10 @@ bindsym $mod+u exec --no-startup-id screenshot root
 # ... or from the current window
 bindsym $mod+i exec --no-startup-id screenshot window
 
+# Volume control
+bindsym XF86AudioLowerVolume exec amixer -q -c 1 set Master 2dB-
+bindsym XF86AudioRaiseVolume exec amixer -q -c 1 set Master 2dB+
+
 exec --no-startup-id emacs -daemon
 exec --no-startup-id nm-applet
 exec xautolock -time 5 -locker 'i3lock --color=000000 --nofork'
