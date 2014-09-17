@@ -168,6 +168,10 @@ bindsym $mod+i exec --no-startup-id screenshot window
 bindsym XF86AudioLowerVolume exec amixer -q -c 1 set Master 2dB-
 bindsym XF86AudioRaiseVolume exec amixer -q -c 1 set Master 2dB+
 
+# Brightness control
+bindsym XF86MonBrightnessDown exec xbacklight -dec 20 -time 0 -steps 1
+bindsym XF86MonBrightnessUp exec xbacklight -inc 20 -time 0 -steps 1
+
 exec --no-startup-id emacs -daemon
 exec --no-startup-id nm-applet
 exec xautolock -time 5 -locker 'i3lock --color=000000 --nofork'
