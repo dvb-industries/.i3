@@ -167,7 +167,7 @@ bindsym $mod+i exec --no-startup-id screenshot window
 # Volume control
 bindsym XF86AudioLowerVolume exec amixer -q -c 1 set Master 2dB-
 bindsym XF86AudioRaiseVolume exec amixer -q -c 1 set Master 2dB+
-
+bindsym XF86AudioMute exec amixer -q -c 1 set Master 0
 # Brightness control
 bindsym XF86MonBrightnessDown exec xbacklight -dec 20 -time 0 -steps 1
 bindsym XF86MonBrightnessUp exec xbacklight -inc 20 -time 0 -steps 1
